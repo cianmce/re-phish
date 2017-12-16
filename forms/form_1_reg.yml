@@ -1,0 +1,119 @@
+---
+id: reg
+action: https://m.facebook.com/reg/
+name: reg
+html: <form method="post" id="reg" name="reg" action="https://m.facebook.com/reg/"
+  onsubmit="return function(event){return false;}.call(this,event)!==false &amp;&amp;
+  window.Event &amp;&amp; Event.__inlineSubmit &amp;&amp; Event.__inlineSubmit(this,event)"></form>
+inputs:
+- name: firstname
+  type: text
+  value:
+    name: first
+    value:
+      class: Faker::Name
+      method: first_name
+  class_name: inputtext _58mg _5dba _2ph-
+  id: u_0_9
+- name: captcha_response
+  type: text
+  value: ''
+  class_name: inputtext
+  id: captcha_response
+- name: lastname
+  type: text
+  value:
+    name: last
+    value:
+      class: Faker::Name
+      method: last_name
+  class_name: inputtext _58mg _5dba _2ph-
+  id: u_0_b
+- name: reg_email__
+  type: text
+  value:
+    name: mail
+    value: &1
+      class: Faker::Internet
+      method: email
+  class_name: inputtext _58mg _5dba _2ph-
+  id: u_0_e
+- name: reg_email_confirmation__
+  type: text
+  value:
+    name: mail
+    value: *1
+  class_name: inputtext _58mg _5dba _2ph-
+  id: u_0_h
+- name: reg_second_contactpoint__
+  type: text
+  value:
+    name: second
+    value:
+      class: Faker::Name
+      method: last_name
+  class_name: inputtext _58mg _5dba _2ph-
+  id: u_0_j
+- name: reg_passwd__
+  type: password
+  value:
+    name: pass
+    value:
+      class: Faker::Internet
+      method: password
+  class_name: inputtext _58mg _5dba _2ph-
+  id: u_0_l
+- name: sex
+  type: radio
+  value: 1
+  id: u_0_6
+- name: terms
+  type: hidden
+  value: 'on'
+  id: terms
+- name: asked_to_login
+  type: hidden
+  value: ''
+  id: asked_to_login
+- name: referrer
+  type: hidden
+  value: ''
+  id: referrer
+- name: reg_instance
+  type: hidden
+  value: bAkSWmDnCEmWNoxZBDcWW3ex
+  id: reg_instance
+- name: contactpoint_label
+  type: hidden
+  value: email_or_phone
+  id: contactpoint_label
+- name: ignore
+  type: hidden
+  value: reg_email_confirmation__|reg_second_contactpoint__
+  id: ignore
+- name: locale
+  type: hidden
+  value: en_US
+  id: locale
+- name: captcha_persist_data
+  type: hidden
+  value: AZlritEhz-A9hZJgqJqtwqUYtYydJ5Z-mwRrw5_mVlX60aelz90yTcImBUziXjM2LqN2-m0iXEg5cEW2mmKsFmMYPL6V-ZivDnh05Tu7yy2vJcyisdx4Q73r6zAvbsUAYbA7hP6N-TXMCtJnrlLlOcjeunfnKQblmPWjOviqGJcsrzjoCB1H51xlsgFCq1WZ1vG5-l_KHH7nDasvN2k0PtqRjJ444Gl9cycptYN57h45aumS0Km1v6ixPx83YWfakG42bJzcH_LDlmTk4gZNXS-oQOJq7_dIsxbifxeUN0vX_A6gwC9eBmZ45Yc3aMvyncfR9Jfx7fuRp5I0ZCM1WKY_kU-6nI_Sc_uy6nZ0XJ6rFg
+  id: captcha_persist_data
+- name: captcha_session
+  type: hidden
+  value: rETZwPeVZ9P1QYkzUgSmVQ
+  id: captcha_session
+- name: extra_challenge_params
+  type: hidden
+  value: authp=nonce.tt.time.new_audio_default&psig=dpVLZ96ewR-4uNr22ceqVj9cHGg&nonce=rETZwPeVZ9P1QYkzUgSmVQ&tt=EBynnUp2b_lw7-ZnkWrAs5xuHbs&time=1511131500&new_audio_default=1
+  id: extra_challenge_params
+- name: recaptcha_type
+  type: hidden
+  value: password
+  id: recaptcha_type
+- name: lsd
+  type: hidden
+  value: AVpn2Ct6
+- name: skstamp
+  type: hidden
+  value: eyJyb3VuZHMiOjUsInNlZWQiOiI5OGUwYjg3ZmRiZTJkZjBiNDEwMzJkZGY0NGZkOGM3YiIsInNlZWQyIjoiNDY1Njg3ZmY0N2U3MzAyNTljODc1YjYxZjc5MTZhMGEiLCJoYXNoIjoiZDczZTBhZjViMmY2Zjg0YmNhNjhjOTMxNWYyZGMxMzUiLCJoYXNoMiI6ImQ2MDBkMWQxMmVmMmZiMjI5ZThmYjI3YTdlOTllNjI5IiwidGltZV90YWtlbiI6Mjg3OSwic3VyZmFjZSI6InJlZ2lzdHJhdGlvbiJ9
