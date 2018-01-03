@@ -1,26 +1,20 @@
 ---
 id: login_form
-action: https://www.facebook.com/login.php?login_attempt=1&lwv=110
-html: <form id="login_form" action="https://www.facebook.com/login.php?login_attempt=1&amp;lwv=110"
-  method="post" novalidate="1" onsubmit="return window.Event &amp;&amp; Event.__inlineSubmit
-  &amp;&amp; Event.__inlineSubmit(this,event)"></form>
+action: http://localhost:3001/m.facebook.com
+method: post
 inputs:
 - name: email
   type: email
   value:
-    name: mail
-    value:
-      class: Faker::Internet
-      method: email
+    class: Faker::Internet
+    method: email
   class_name: inputtext
   id: email
 - name: pass
   type: password
   value:
-    name: pass
-    value:
-      class: Faker::Internet
-      method: password
+    class: Faker::Internet
+    method: password
   class_name: inputtext
   id: pass
 - name: lgnjs
@@ -34,38 +28,3 @@ inputs:
   type: hidden
   value: '0'
   id: u_0_3
-- name: lgndim
-  type: hidden
-  value: eyJ3IjoxMjgwLCJoIjoxMDI0LCJhdyI6MTI4MCwiYWgiOjEwMDEsImMiOjI0fQ==
-  id: u_0_4
-- name: lgnrnd
-  type: hidden
-  value: 144500_IFCj
-- name: lsd
-  type: hidden
-  value: AVpn2Ct6
-- name: ab_test_data
-  type: hidden
-  value: ''
-- name: locale
-  type: hidden
-  value: en_US
-  id: locale
-- name: login_source
-  type: hidden
-  value: login_bluebar
-- name: prefill_contact_point
-  type: hidden
-  value: ''
-  id: prefill_contact_point
-- name: prefill_source
-  type: hidden
-  value: ''
-  id: prefill_source
-- name: prefill_type
-  type: hidden
-  value: ''
-  id: prefill_type
-- name: skstamp
-  type: hidden
-  value: eyJyb3VuZHMiOjUsInNlZWQiOiI5OGUwYjg3ZmRiZTJkZjBiNDEwMzJkZGY0NGZkOGM3YiIsInNlZWQyIjoiNDY1Njg3ZmY0N2U3MzAyNTljODc1YjYxZjc5MTZhMGEiLCJoYXNoIjoiZDczZTBhZjViMmY2Zjg0YmNhNjhjOTMxNWYyZGMxMzUiLCJoYXNoMiI6ImQ2MDBkMWQxMmVmMmZiMjI5ZThmYjI3YTdlOTllNjI5IiwidGltZV90YWtlbiI6MjUzMDQsInN1cmZhY2UiOiJsb2dpbiJ9
